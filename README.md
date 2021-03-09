@@ -1,4 +1,4 @@
-# ao3MobileRedux
+# ao3MobileRedux Script Collection
 A stripped-down fork of tuffs' ao3 savior userscript for ease of use on compatible mobile browser apps. 
 (Specifically Alook browser for iOS, which will run custom Javascript automatically when a page at a certain URL is loaded)
 
