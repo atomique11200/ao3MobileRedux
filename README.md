@@ -4,11 +4,11 @@ A stripped-down fork of tuffs' ao3 savior userscript for ease of use on compatib
 
 https://greasyfork.org/en/scripts/3579-ao3-savior
 
-** Added personal hellban
+** Added personal hellban for comment control
 
 https://greasyfork.org/en/scripts/3577-ao3-personal-hellban
 
-** Added hide stats script for use in inbox
+** Added hide stats script for hiding comments in inbox
 
 https://github.com/aceboxn/ao3-hide-stats/tree/master/statshiding
 
