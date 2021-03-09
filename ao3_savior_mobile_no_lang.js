@@ -6,8 +6,7 @@
     tagBlacklist: ['dobby', 
                    'jar jar binks', 
                    '*mimes',
-				   'Fluff',
-				   '*Jaskier*'
+		   'Fluff'
                   ],
 
     // Include works with tags
@@ -15,9 +14,10 @@
                   ],
 
     // Exclude works with summaries that contain at least one term
-    summaryBlacklist: ['Hogwarts', 
-					'kissing',
-					'hand-holding'],
+    summaryBlacklist: ['Hogwarts',
+		       'kissing',
+		       'hand-holding'
+		      ],
      
     // Exclude works by authors
     authorBlacklist: ['someUserName'],
