@@ -1,6 +1,6 @@
 # ao3MobileRedux Script Collection
 
-A bunch of useful scripts for Ao3, collected so they're easier to get onto a mobile device: 
+A bunch of useful scripts for Ao3 filtering, collected so they're easier to get onto a mobile device: 
 
 - A stripped-down fork of tuffs' ao3 savior userscript for ease of use on compatible mobile browser apps.
 The source scripts can all be run from desktop browsers using extensions like greasemonkey or tampermonkey.
