@@ -7,6 +7,9 @@ The source scripts can all be run from desktop browsers using extensions like gr
 Ao3 savior has been combined into a single file w/ the debug code removed so it's a little easier to navigate using a touchscreen phone.
 
 (Specifically used w/ Alook browser for iOS, which will run custom Javascript automatically when a page from a specified URL is loaded)
+https://apps.apple.com/us/app/alook-browser-2x-speed/id1261944766
+
+I've only been using this app for accessing ao3, so I can't vouch for any of its features beyond that. 
 
 Ao3 savior allows works to be hidden and/or whitelisted based on tag, author, or summary keywords (ao3_savior_mobile_no_lang.js)
 
