@@ -295,5 +295,5 @@ var getFold = function getFold(reason) {
     }
 
   }, 10);
-
+//ao3 savior fork by atomique
 }());
