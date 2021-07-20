@@ -3,8 +3,7 @@
     var config = window.ao3SaviorConfig = {
 
     // Exclude works with tags
-    tagBlacklist: ['testing'
-                  ],
+    tagBlacklist: ['testing', 'test'],
 
     // Include works with tags
     tagWhitelist: ['testing'],
