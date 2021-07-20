@@ -3,17 +3,14 @@
     var config = window.ao3SaviorConfig = {
 
     // Exclude works with tags
-    tagBlacklist: ['dobby',
-                   'jar jar binks',
-                   '*mimes',
-                   'Fluff'
+    tagBlacklist: ['testing'
                   ],
 
     // Include works with tags
-    tagWhitelist: ['Clowns'],
+    tagWhitelist: ['testing'],
 
     // Exclude works with summaries that contain at least one term
-    summaryBlacklist: ['Hogwarts'],
+    summaryBlacklist: ['TEST_WORD'],
 
     // Exclude works by authors
     authorBlacklist: ['theWorstAuthorEver', 'smeyer'],
@@ -31,9 +28,7 @@
     alertOnVisit: false
 
   };
-	
-var preferredLanguage = 'English';
-var hasLanguagePreference = false;
+
 
   var STYLE = '\n  html body .ao3-savior-hidden.ao3-savior-hidden {\n    display: none;\n  }\n  \n  .ao3-savior-cut {\n    display: none;\n  }\n  \n  .ao3-savior-cut::after {\n    clear: both;\n    content: \'\';\n    display: block;\n  }\n  \n  .ao3-savior-reason {\n    margin-left: 5px;\n  }\n  \n  .ao3-savior-hide-reasons .ao3-savior-reason {\n    display: none;\n  }\n  \n  .ao3-savior-unhide .ao3-savior-cut {\n    display: block;\n  }\n  \n  .ao3-savior-fold {\n    align-items: center;\n    display: flex;\n    justify-content: flex-start;\n  }\n  \n  .ao3-savior-unhide .ao3-savior-fold {\n    border-bottom: 1px dashed;\n    margin-bottom: 15px;\n    padding-bottom: 5px;\n  }\n  \n  button.ao3-savior-toggle {\n    margin-left: auto;\n  }\n';
 
@@ -55,25 +50,14 @@ var hasLanguagePreference = false;
 	return cut;
   };
 
-  var getFold = function getFold(reason, work) {
+var getFold = function getFold(reason) {
     var fold = document.createElement('div');
     var note = document.createElement('span');
 
     fold.className = CSS_NAMESPACE + '-fold';
     note.className = CSS_NAMESPACE + '-note';
 
-      preferredLanguage = preferredLanguage.toUpperCase();
-    if(hasLanguagePreference && work.querySelector('dd.language').textContent.toUpperCase().trim() != preferredLanguage){
-
-        var cap = work.querySelector('dd.language').textContent.toUpperCase().trim();
-
-        var str = cap.charAt(0).toUpperCase() + cap.slice(1).toLowerCase();
-
-          note.innerHTML = 'This work is hidden! (Language: ' + str +')';
-      }
-      else{
-          note.innerHTML = 'This work is hidden!';
-      }
+    note.innerHTML = 'This work is hidden!';
 
     fold.appendChild(note);
     fold.append(' ');
@@ -143,7 +127,7 @@ var hasLanguagePreference = false;
 
 
     if (showPlaceholders) {
-      var fold = getFold(reason, work);
+      var fold = getFold(reason);
       var cut = getCut(work);
 
       work.className += ' ' + CSS_NAMESPACE + '-work';
@@ -291,10 +275,6 @@ var hasLanguagePreference = false;
     Array.from(document.querySelectorAll('li.blurb')).forEach(function (blurb) {
       var blockables = selectFromBlurb(blurb);
       var reason = getBlockReason(blockables, config);
-
-if( blurb.querySelector('dd.language').textContent.toLowerCase().trim()!= 'english'){
-          reason = true;
-      }
 
       total++;
 
