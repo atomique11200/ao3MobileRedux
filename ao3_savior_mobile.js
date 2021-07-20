@@ -1,6 +1,3 @@
-var preferredLanguage = 'English';
-var hasLanguagePreference = false;
-
 (function () {
   'use strict';
     var config = window.ao3SaviorConfig = {
@@ -34,6 +31,9 @@ var hasLanguagePreference = false;
     alertOnVisit: false
 
   };
+	
+var preferredLanguage = 'English';
+var hasLanguagePreference = false;
 
   var STYLE = '\n  html body .ao3-savior-hidden.ao3-savior-hidden {\n    display: none;\n  }\n  \n  .ao3-savior-cut {\n    display: none;\n  }\n  \n  .ao3-savior-cut::after {\n    clear: both;\n    content: \'\';\n    display: block;\n  }\n  \n  .ao3-savior-reason {\n    margin-left: 5px;\n  }\n  \n  .ao3-savior-hide-reasons .ao3-savior-reason {\n    display: none;\n  }\n  \n  .ao3-savior-unhide .ao3-savior-cut {\n    display: block;\n  }\n  \n  .ao3-savior-fold {\n    align-items: center;\n    display: flex;\n    justify-content: flex-start;\n  }\n  \n  .ao3-savior-unhide .ao3-savior-fold {\n    border-bottom: 1px dashed;\n    margin-bottom: 15px;\n    padding-bottom: 5px;\n  }\n  \n  button.ao3-savior-toggle {\n    margin-left: auto;\n  }\n';
 
